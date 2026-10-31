@@ -1,0 +1,86 @@
+#langbox {
+  width: 76px;
+  text-align: center;
+  left: 600px;
+  height: 35px;
+  position: absolute;
+  top: 30px;
+}
+a#lang {
+  margin: 0px;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  float: left;
+  width: 76px;
+  position: absolute;
+  clear: both;
+  text-decoration: none;
+  line-height: 35px;
+  background-image: url(../img/index/bluebox.png);
+  background-repeat: no-repeat;
+  background-position:  center center;
+}
+img#top {
+  border: 5px ridge #cccccc;
+  width: 300px;
+}
+p.news {
+  border-bottom: 4px double #666666;
+  color: #666666;
+  text-align: left;
+  font-weight: inherit;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+div.news {
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: left;
+}
+ul.news {
+  list-style-image: url(../img/index/pin.png);
+}
+.waku {
+  border: 5px ridge #666666;
+  margin-right: auto;
+  text-align: left;
+  margin-left: auto;
+  width: 580px;
+}
+p.boshu {
+  color: red;
+  font-weight: inherit;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+ul.boshu {
+  margin: 3px 5px;
+  list-style-type: disc;
+  line-height: 20px;
+}
+.banner {
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner td {
+  border-style: none;
+  text-align: center;
+}
+.banner tr {
+  border-style: none;
+}
+div#update {
+  font-size: 11px;
+  margin-right: 15px;
+  text-align: right;
+  color: #333333;
+}
+ul.en {
+  font-style: italic;
+  color: #333333;
+}

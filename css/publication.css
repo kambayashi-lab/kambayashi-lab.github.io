@@ -1,0 +1,25 @@
+h2.year {
+  font-weight: bold;
+  font-size: 24px;
+  color: #993300;
+  text-align: left;
+  margin-left: 30px;
+}
+div#list li {
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-bottom: 7px;
+  text-align: left;
+  font-size: 15px;
+}
+sub, sup {
+vertical-align: baseline;
+}
+sup {
+position:relative;
+top:-4px
+}
+sub {
+position:relative;
+top:4px
+}

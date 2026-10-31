@@ -1,0 +1,73 @@
+/* ===== 横幅1100px対応の共通レイアウト（wide.css） ===== */
+
+/* --- 写真ページ（各イベント）：写真をタイル状に並べる --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+  margin: 16px 0 24px;
+}
+.gallery a { display: block; }
+.gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+.gallery a:hover img { opacity: 0.85; }
+
+/* --- 研究内容：研究テーマをカードで2列に --- */
+.research-intro {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 10px 0 30px;
+}
+.research-intro p.research { flex: 1 1 auto; text-align: left; line-height: 1.8; margin: 0; }
+.research-intro img { flex: 0 0 auto; max-width: 48%; height: auto; }
+.research-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.research-card {
+  border: 1px solid #e3e6ea;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  background: #fff;
+}
+.research-card .fig { text-align: center; margin-bottom: 10px; }
+.research-card .fig img { max-width: 100%; height: auto; max-height: 300px; }
+.research-card ul.research { margin: 0; padding-left: 1.2em; }
+
+/* --- 論文の日本語概要ページ：論文情報は文章左・図右 --- */
+.pub { display: flex; align-items: flex-start; gap: 24px; }
+.pub-text { flex: 1 1 auto; min-width: 0; text-align: left; line-height: 1.6; }
+.pub-fig { flex: 0 0 auto; max-width: 45%; display: flex; align-items: flex-end; gap: 10px; }
+.pub-fig img { max-width: 100%; height: auto; }
+.pub-fig > img { flex: 0 1 auto; min-width: 0; }
+.pub-fig a { flex: 0 0 auto; }
+.pub-fig a img { width: 101px; }
+.summary { line-height: 1.9; text-align: left; margin-top: 20px; }
+
+/* --- アクセス：説明と地図を横並び --- */
+.access-wrap { display: flex; align-items: flex-start; gap: 30px; text-align: left; }
+.access-wrap #access { flex: 1 1 auto; min-width: 0; }
+.access-map { flex: 0 0 auto; max-width: 55%; text-align: center; }
+.access-map img { max-width: 100%; height: auto !important; }
+
+/* --- 論文表紙ページ：表紙画像を画面内に収める --- */
+img.cover-big { max-width: 100%; height: auto; }
+
+/* ===== スマホ・狭い画面 ===== */
+@media screen and (max-width: 768px) {
+  .gallery { grid-template-columns: 1fr; gap: 10px; }
+  .gallery img { height: auto; }
+  .research-intro, .access-wrap, .pub { flex-direction: column; gap: 12px; }
+  .research-intro img, .access-map, .pub-fig { max-width: 100%; align-self: center; }
+  .pub-fig { justify-content: center; flex-wrap: wrap; }
+  .research-cards { grid-template-columns: 1fr; }
+}

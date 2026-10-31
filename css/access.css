@@ -1,0 +1,38 @@
+div#access {
+  margin-left: 30px;
+  font-size: 15px;
+  text-align: left;
+  margin-right: 30px;
+  line-height: 20px;
+}
+div#access dt {
+  margin-bottom: 5px;
+}
+div#access dl {
+  margin-bottom: 30px;
+}
+div.center{
+  text-align: center;
+}
+img {
+  padding: 5px;
+  background-position:  center center;
+  background-repeat: repeat;
+  background-image: url(../img/back/c0c0c0.jpg);
+}
+div.navi {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+div#access-en {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  font-family: "Times New Roman",Times,serif;
+  color: #333333;
+  margin-left: 30px;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: left;
+}

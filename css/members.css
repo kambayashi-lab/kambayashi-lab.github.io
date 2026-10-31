@@ -1,0 +1,109 @@
+table#members {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+td {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+tr.blank {
+  height: 10px;
+}
+
+/*
+div#address {
+  position: absolute;
+  text-align: left;
+  font-size: 12px;
+  left: 430px;
+  top: 130px;
+}
+*/
+
+td#space {
+  width: 12px;
+}
+
+table#alumni {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+td.year {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 0px;
+}
+
+div.en {
+  font-style: italic;
+}
+
+table#members-en {
+  margin-left: 50px;
+  text-align: left;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* ======================
+   ✅ メールアドレス注意書きスタイル
+   ====================== */
+.email-note {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  word-break: break-word;
+  white-space: normal;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+/* ======================
+   ✅ 長文タイトル対応
+   ====================== */
+.long-title {
+  font-size: 16px;
+  line-height: 1.6;
+  word-break: break-word;
+  white-space: normal;
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* ======================
+   ✅ モバイル対応（レスポンシブ）
+   ====================== */
+@media screen and (max-width: 768px) {
+  table#members,
+  table#alumni,
+  table#members-en {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .email-note {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .long-title {
+    font-size: 15px;
+    padding: 0 10px;
+    text-align: left;
+  }
+}

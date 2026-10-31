@@ -1,0 +1,54 @@
+p.research {
+  margin-right: 30px;
+  margin-left: 30px;
+  line-height: 25px;
+  text-align: justify;
+  font-size: 17px;
+}
+ul.research {
+  list-style-image: url(../img/research/bullet-ball.png);
+  margin-right: 30px;
+  line-height: 25px;
+  margin-left: 30px;
+  font-size: 17px;
+  text-align: left;
+}
+
+ul.research_1 {
+  margin-right: 30px;
+  line-height: 25px;
+  margin-left: 30px;
+  font-size: 20px;
+  text-align: left;
+}
+
+img {
+  
+}
+div.navi {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  text-align: right;
+  margin-right: 20px;
+}
+p.research-en {
+  color: #333333;
+  margin-right: 30px;
+  font-family: "Times New Roman",Times,serif;
+  text-align: justify;
+  margin-left: 30px;
+  font-size: 15px;
+  line-height: 20px;
+}
+ul.research-en {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: "Times New Roman",Times,serif;
+  font-weight: bold;
+  list-style-image: url(../img/research/bullet-ball.png);
+  line-height: 25px;
+  font-style: italic;
+  text-align: left;
+  color: #666666;
+}

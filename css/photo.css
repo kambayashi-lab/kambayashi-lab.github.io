@@ -1,0 +1,32 @@
+h2.year {
+  text-align: left;
+  font-size: 24px;
+  margin-left: 30px;
+  font-weight: bold;
+  color: #993300;
+}
+td.space {
+  width: 100px;
+}
+img {
+  padding: 5px;
+  background-position:  center center;
+  background-image: url(../img/back/c0c0c0.jpg);
+  background-repeat: repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+table.photo {
+  margin-right: auto;
+  margin-left: auto;
+}
+div.navi {
+  margin-right: 20px;
+  margin-bottom: 12px;
+  text-align: right;
+  margin-top: 12px;
+}
+tr.caption {
+  font-size: 15px;
+  height: 40px;
+}

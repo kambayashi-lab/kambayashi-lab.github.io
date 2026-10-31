@@ -1,0 +1,9 @@
+div#link {
+  font-size: 15px;
+  margin-left: 30px;
+  text-align: left;
+  line-height: 24px;
+}
+div#inner {
+  margin-left: 1.5em;
+}
