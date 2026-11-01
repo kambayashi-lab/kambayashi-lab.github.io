@@ -29,8 +29,27 @@
       /* 紹介文：意味の切れ目で改行されるようにする */
       p.intro { line-height: 1.8; }
       p.intro .ph { display: inline-block; }
+
+    /* バナー：ロゴの高さと間隔をそろえ、上下中央で横一列に並べる（狭い画面では折り返す） */
+    #back table.banner, #back table.banner tbody { display: block; }
+    #back table.banner tr {
+      display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;
+      gap: 16px 24px; padding: 12px 0; width: 100%; box-sizing: border-box;
+    }
+    #back table.banner td { display: block; flex: 0 0 auto; width: auto; padding: 0; margin: 0; }
+    #back table.banner a.imglink { display: block; line-height: 0; }
+    #back table.banner img { display: block; height: 36px; width: auto; }
+    #back table.banner img.logo-tall { height: 46px; }
     </style>
 
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4BGYG1VTQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X4BGYG1VTQ');
+    </script>
   </head>
 
   <body>
@@ -80,7 +99,7 @@
 		  <li>B4の３名(浦田さん、高林さん、別所さん)と M1の１名（Chlo&eacute; Huartさん）が加入し新年度スタート(2026.4.1)</li>
 		  <li>大阪大学の星本先生が代表の環境問題対応型研究＠ERCAに分担者として参加することになりました(2026.4.1)。</li>
 		  <li>加藤研(超分子材料学分野)と合同で4年生の研究発表をしました (2026.3.24)</li>
-		  <li>ポリチオフェンの末端官能基化に関する論文が<i>Macromolecules</i> に受理されました(DOI: <a href="https://doi.org/10.1021/acs.macromol.6c00042" target="_blank">10.1021/acs.macromol.6c00042</a>)(2025.3.18)</li>
+		  <li>ポリチオフェンの末端官能基化に関する論文が<i>Macromolecules</i> に受理されました(DOI: <a href="https://doi.org/10.1021/acs.macromol.6c00042" target="_blank">10.1021/acs.macromol.6c00042</a>)(2026.3.18)</li>
 		  <li>日本化学年会 第106回春季年会で発表しました[口頭発表(内田)・ポスター(久保・高﨑)] (2026.3.17-20)</li>
 		  <li>令和7年度卒業研究発表会で発表しました(久保・高﨑・堀田) (2026.2.16)</li>
 		  <li>SReP領域　第３回公開シンポジウム＠名古屋大学に参加＋ポスター発表をしました (2026.1.23-24)</li>
@@ -90,7 +109,7 @@
 		  <li>松籟科学技術振興財団 ２０２５年度助成金交付研究に採択されました(2025.12.12)</li>
 		  <li>小笠原敏晶記念財団 科学技術助成に採択されました(2025.11.26)</li>
 		  <li>第三回高分子結合制御研究会@名古屋工業大学で講演(神林)＋ポスター発表3件[内田(鬼塚研所属)・久保・高﨑]を行いました(2025.11.17-18)。</li>
-		  <li>πスタック型らせん高分子に関する研究が高分子学会会誌<i>「高分子」</i>の"トピックス"に掲載されました(DOI: <a href="https://doi.org/10.1295/kobunshi.74.11_615" target="_blank">10.1295/kobunshi.74.11_6153</a>)(2025.11.1)</li>
+		  <li>πスタック型らせん高分子に関する研究が高分子学会会誌<i>「高分子」</i>の"トピックス"に掲載されました(DOI: <a href="https://doi.org/10.1295/kobunshi.74.11_6153" target="_blank">10.1295/kobunshi.74.11_6153</a>)(2025.11.1)</li>
 		  <li>中西研・加藤研と研究交流会を行いました(2025.10.21)</li>
 		  <li>高分子骨格変換に関する論文が<i>Chem. Lett.</i> に受理されました(DOI: <a href="https://doi.org/10.1093/chemle/upaf193" target="_blank">10.1093/chemle/upaf193</a>)(2025.10.16)</li>
 		  <li>東京都立大学の山添先生が代表の「パッシブDAC技術の研究開発」NEDOムーンショットに委託研究として参加することになりました。(2025.10.1)</li>
@@ -123,24 +142,29 @@
           <tr>
             <td>
               <a href="https://www.kit.ac.jp/" class="imglink" target="_blank">
-                <img width="180" height="55" alt="京都工芸繊維大学" src="../img/index/logo.svg" />
+                <img width="238" height="36" alt="京都工芸繊維大学" src="../img/index/logo.svg" />
               </a>
             </td>
             <td>
               <a href="https://www.applchem.kit.ac.jp/" class="imglink" target="_blank">
-                <img width="160" height="38" alt="応用化学課程" src="../img/index/katei1.jpg" />
+                <img width="166" height="36" alt="応用化学課程" src="../img/index/katei1_trim.jpg" />
               </a>
             </td>
             <td>
               <a href="https://srep.kuchem.kyoto-u.ac.jp/" class="imglink" target="_blank">
-                <img width="163" height="60" alt="SReP領域" src="../img/index/srep.png" />
+                <img class="logo-tall" width="136" height="46" alt="SReP領域" src="../img/index/srep_trim.png" />
+              </a>
+            </td>
+            <td>
+              <a href="https://www.jst.go.jp/souhatsu/" class="imglink" target="_blank">
+                <img width="203" height="36" alt="JST 創発的研究支援事業" src="../img/index/forest.png" />
               </a>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <div id="update">Last Update: 2026/10/27</div>
+      <div id="update">Last Update: 2026/11/1</div>
       <hr style="width: 100%; height: 2px;" />
 
       <div id="copyright">
