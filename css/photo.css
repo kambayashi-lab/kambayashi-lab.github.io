@@ -1,9 +1,35 @@
-h2.year {
+h2.year, summary.year {
   text-align: left;
   font-size: 24px;
   margin-left: 30px;
   font-weight: bold;
   color: #993300;
+}
+summary.year {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+summary.year::-webkit-details-marker {
+  display: none;
+}
+summary.year::before {
+  content: "\25B6";
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+details[open] > summary.year::before {
+  transform: rotate(90deg);
+}
+summary.year:hover .year-hint,
+summary.year:focus-visible .year-hint {
+  text-decoration: underline;
+}
+.year-hint {
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
 }
 td.space {
   width: 100px;
